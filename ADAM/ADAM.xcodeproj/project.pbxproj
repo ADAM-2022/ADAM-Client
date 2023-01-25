@@ -16,6 +16,8 @@
 		AB0B351E297FFAD4002BA5BC /* ADAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B351D297FFAD4002BA5BC /* ADAMTests.swift */; };
 		AB0B3528297FFAD4002BA5BC /* ADAMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3527297FFAD4002BA5BC /* ADAMUITests.swift */; };
 		AB0B352A297FFAD4002BA5BC /* ADAMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3529297FFAD4002BA5BC /* ADAMUITestsLaunchTests.swift */; };
+		ABCC72F629814DC600D3B75B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ABCC72F529814DC600D3B75B /* SnapKit */; };
+		ABCC72FB29814DC600D3B75B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABCC72FA29814DC600D3B75B /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,19 @@
 			remoteInfo = ADAM;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABCC72FC29814DC600D3B75B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AB0B3503297FFAD2002BA5BC /* ADAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCC72FB29814DC600D3B75B /* Alamofire in Frameworks */,
+				ABCC72F629814DC600D3B75B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,7 @@
 				AB0B351C297FFAD4002BA5BC /* ADAMTests */,
 				AB0B3526297FFAD4002BA5BC /* ADAMUITests */,
 				AB0B3504297FFAD2002BA5BC /* Products */,
+				ABCC72F429814DC600D3B75B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +145,13 @@
 			path = ADAMUITests;
 			sourceTree = "<group>";
 		};
+		ABCC72F429814DC600D3B75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +162,7 @@
 				AB0B34FF297FFAD2002BA5BC /* Sources */,
 				AB0B3500297FFAD2002BA5BC /* Frameworks */,
 				AB0B3501297FFAD2002BA5BC /* Resources */,
+				ABCC72FC29814DC600D3B75B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +170,8 @@
 			);
 			name = ADAM;
 			packageProductDependencies = (
+				ABCC72F529814DC600D3B75B /* SnapKit */,
+				ABCC72FA29814DC600D3B75B /* Alamofire */,
 			);
 			productName = ADAM;
 			productReference = AB0B3503297FFAD2002BA5BC /* ADAM.app */;
@@ -639,6 +667,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABCC72F529814DC600D3B75B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB0B3536297FFC83002BA5BC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		ABCC72FA29814DC600D3B75B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB0B353B297FFD0C002BA5BC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB0B34FB297FFAD2002BA5BC /* Project object */;
 }
