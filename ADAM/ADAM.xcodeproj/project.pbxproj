@@ -28,7 +28,15 @@
 		ABCC731C298268EF00D3B75B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC731B298268EF00D3B75B /* BaseViewModel.swift */; };
 		ABCC7321298269D500D3B75B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC7320298269D500D3B75B /* UIView+.swift */; };
 		ABCC732329826BD300D3B75B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC732229826BD300D3B75B /* Observable.swift */; };
-		ABCC732529827CC400D3B75B /* BriefPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC732429827CC400D3B75B /* BriefPost.swift */; };
+		ABCC732529827CC400D3B75B /* PreviewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC732429827CC400D3B75B /* PreviewPost.swift */; };
+		ABCC73272984F54200D3B75B /* PreviewPostsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC73262984F54200D3B75B /* PreviewPostsListUseCase.swift */; };
+		ABCC732A2984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC73292984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift */; };
+		ABCC732C2984FB9200D3B75B /* PreviewPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC732B2984FB9200D3B75B /* PreviewPostRepository.swift */; };
+		ABEC20782985124100B3AC3F /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC20772985124100B3AC3F /* TestUser.swift */; };
+		ABEC207A29852A1A00B3AC3F /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC207929852A1A00B3AC3F /* NetworkServiceError.swift */; };
+		ABEC207F29855B6D00B3AC3F /* PreviewPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC207E29855B6D00B3AC3F /* PreviewPostTableViewCell.swift */; };
+		ABEC2081298A8DF300B3AC3F /* CommunityEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC2080298A8DF300B3AC3F /* CommunityEndpoint.swift */; };
+		ABEC2083298AA7BB00B3AC3F /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC2082298AA7BB00B3AC3F /* APIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +93,15 @@
 		ABCC731B298268EF00D3B75B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		ABCC7320298269D500D3B75B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		ABCC732229826BD300D3B75B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		ABCC732429827CC400D3B75B /* BriefPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefPost.swift; sourceTree = "<group>"; };
+		ABCC732429827CC400D3B75B /* PreviewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPost.swift; sourceTree = "<group>"; };
+		ABCC73262984F54200D3B75B /* PreviewPostsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostsListUseCase.swift; sourceTree = "<group>"; };
+		ABCC73292984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostRepositoryProtocol.swift; sourceTree = "<group>"; };
+		ABCC732B2984FB9200D3B75B /* PreviewPostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostRepository.swift; sourceTree = "<group>"; };
+		ABEC20772985124100B3AC3F /* TestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
+		ABEC207929852A1A00B3AC3F /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		ABEC207E29855B6D00B3AC3F /* PreviewPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostTableViewCell.swift; sourceTree = "<group>"; };
+		ABEC2080298A8DF300B3AC3F /* CommunityEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityEndpoint.swift; sourceTree = "<group>"; };
+		ABEC2082298AA7BB00B3AC3F /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,13 +155,12 @@
 		AB0B3505297FFAD2002BA5BC /* ADAM */ = {
 			isa = PBXGroup;
 			children = (
+				ABEC20762985122500B3AC3F /* Test */,
 				ABCC73002982622C00D3B75B /* Application */,
 				ABCC73012982632A00D3B75B /* Global */,
 				ABCC73022982634300D3B75B /* DomainLayer */,
 				ABCC7307298263CD00D3B75B /* DataLayer */,
 				ABCC7306298263AF00D3B75B /* PresenterLayer */,
-				AB0B350F297FFAD3002BA5BC /* Assets.xcassets */,
-				AB0B3511297FFAD3002BA5BC /* LaunchScreen.storyboard */,
 				AB0B3514297FFAD3002BA5BC /* Info.plist */,
 			);
 			path = ADAM;
@@ -187,6 +202,8 @@
 		ABCC73012982632A00D3B75B /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				AB0B3511297FFAD3002BA5BC /* LaunchScreen.storyboard */,
+				AB0B350F297FFAD3002BA5BC /* Assets.xcassets */,
 				ABCC73082982640F00D3B75B /* Pallete.swift */,
 				ABCC730A2982646100D3B75B /* ImageAsset.swift */,
 				ABCC730C2982649F00D3B75B /* Constant.swift */,
@@ -209,7 +226,7 @@
 		ABCC73032982634C00D3B75B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				ABCC732429827CC400D3B75B /* BriefPost.swift */,
+				ABCC732429827CC400D3B75B /* PreviewPost.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -217,6 +234,7 @@
 		ABCC73042982636600D3B75B /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				ABCC73292984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -224,6 +242,7 @@
 		ABCC73052982636F00D3B75B /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				ABCC73282984F67A00D3B75B /* Community */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -259,6 +278,7 @@
 		ABCC73132982675500D3B75B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				ABCC732B2984FB9200D3B75B /* PreviewPostRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -266,6 +286,9 @@
 		ABCC7314298267E300D3B75B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				ABEC207929852A1A00B3AC3F /* NetworkServiceError.swift */,
+				ABEC2080298A8DF300B3AC3F /* CommunityEndpoint.swift */,
+				ABEC2082298AA7BB00B3AC3F /* APIConfiguration.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -285,6 +308,7 @@
 			children = (
 				ABCC73172982689900D3B75B /* CommunityViewModel.swift */,
 				AB0B350A297FFAD2002BA5BC /* CommuntiyViewController.swift */,
+				ABEC207D29855AB100B3AC3F /* ViewComponents */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -295,6 +319,30 @@
 				ABCC7320298269D500D3B75B /* UIView+.swift */,
 			);
 			path = UIExtension;
+			sourceTree = "<group>";
+		};
+		ABCC73282984F67A00D3B75B /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				ABCC73262984F54200D3B75B /* PreviewPostsListUseCase.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		ABEC20762985122500B3AC3F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC20772985124100B3AC3F /* TestUser.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		ABEC207D29855AB100B3AC3F /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC207E29855B6D00B3AC3F /* PreviewPostTableViewCell.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,17 +485,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEC2081298A8DF300B3AC3F /* CommunityEndpoint.swift in Sources */,
 				ABCC732329826BD300D3B75B /* Observable.swift in Sources */,
 				ABCC7321298269D500D3B75B /* UIView+.swift in Sources */,
-				ABCC732529827CC400D3B75B /* BriefPost.swift in Sources */,
+				ABCC732529827CC400D3B75B /* PreviewPost.swift in Sources */,
 				ABCC730B2982646100D3B75B /* ImageAsset.swift in Sources */,
+				ABEC207F29855B6D00B3AC3F /* PreviewPostTableViewCell.swift in Sources */,
 				ABCC731C298268EF00D3B75B /* BaseViewModel.swift in Sources */,
+				ABEC2083298AA7BB00B3AC3F /* APIConfiguration.swift in Sources */,
+				ABCC73272984F54200D3B75B /* PreviewPostsListUseCase.swift in Sources */,
 				AB0B350B297FFAD2002BA5BC /* CommuntiyViewController.swift in Sources */,
 				AB0B3507297FFAD2002BA5BC /* AppDelegate.swift in Sources */,
+				ABCC732A2984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift in Sources */,
 				ABCC73182982689900D3B75B /* CommunityViewModel.swift in Sources */,
 				AB0B3509297FFAD2002BA5BC /* SceneDelegate.swift in Sources */,
 				ABCC731A298268C200D3B75B /* BaseViewController.swift in Sources */,
+				ABCC732C2984FB9200D3B75B /* PreviewPostRepository.swift in Sources */,
 				ABCC73092982640F00D3B75B /* Pallete.swift in Sources */,
+				ABEC20782985124100B3AC3F /* TestUser.swift in Sources */,
+				ABEC207A29852A1A00B3AC3F /* NetworkServiceError.swift in Sources */,
 				ABCC730F298264E200D3B75B /* Device.swift in Sources */,
 				ABCC730D2982649F00D3B75B /* Constant.swift in Sources */,
 				ABCC7312298265B000D3B75B /* Date+.swift in Sources */,

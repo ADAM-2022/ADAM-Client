@@ -8,27 +8,25 @@
 import Foundation
 
 protocol CommunityViewModelInput {
-    func someMethod()
+    func loadPreviewPosts()
 }
 
 protocol CommunityViewModelOutput {
-    var briefPosts: Observable<[Int]> { get }
+    var previewPosts: Observable<[PreviewPost]> { get }
     var error: Observable<String> { get }
 }
 
 final class CommunityViewModel: BaseViewModel, CommunityViewModelInput, CommunityViewModelOutput {
-    var briefPosts: Observable<[Int]> = Observable([])
+    private let previewPostsListUseCase: PreviewPostsListUseCase
+    var previewPosts: Observable<[PreviewPost]> = Observable([])
     var error: Observable<String> = Observable("")
     
-    override init() {
-        
+    init(_ previewPostsListUseCase: PreviewPostsListUseCase) {
+        self.previewPostsListUseCase = previewPostsListUseCase
+        super.init()
     }
     
-    func someMethod() {
-            
+    func loadPreviewPosts() {
+        self.previewPosts.value = previewPostsListUseCase.fetchPreviewPosts()
     }
-    
-   
-    
-    
 }
