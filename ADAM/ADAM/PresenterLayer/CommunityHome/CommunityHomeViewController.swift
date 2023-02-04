@@ -1,5 +1,5 @@
 //
-//  CommuntiyViewController.swift
+//  CommunityHomeViewController.swift
 //  ADAM
 //
 //  Created by Noah Park on 2023/01/24.
@@ -8,9 +8,9 @@
 import UIKit
 import SnapKit
 
-final class CommuntiyViewController: BaseViewController {
+final class CommunityHomeViewController: BaseViewController {
     
-    let viewModel = CommunityViewModel(PreviewPostsListUseCase(PreviewPostRepository()))
+    let viewModel = CommunityHomeViewModel(PreviewPostsListUseCase(PreviewPostRepository()))
     
     private lazy var briefPostsTableView: UITableView = {
         let tableView = UITableView()
@@ -30,7 +30,7 @@ final class CommuntiyViewController: BaseViewController {
         viewModel.loadPreviewPosts()
     }
     
-    private func bind(to viewModel: CommunityViewModel) {
+    private func bind(to viewModel: CommunityHomeViewModel) {
         viewModel.previewPosts.observe(on: self) { [weak self] _ in
             self?.briefPostsTableView.reloadData()
         }
@@ -44,7 +44,7 @@ final class CommuntiyViewController: BaseViewController {
     }
 }
 
-extension CommuntiyViewController: UITableViewDataSource {
+extension CommunityHomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.previewPosts.value.count
     }
@@ -60,7 +60,7 @@ extension CommuntiyViewController: UITableViewDataSource {
     
 }
 
-private extension CommuntiyViewController {
+private extension CommunityHomeViewController {
     func setbriefPostsTableViewLayout() {
         view.addSubview(briefPostsTableView)
         briefPostsTableView.snp.makeConstraints { make in
@@ -69,4 +69,4 @@ private extension CommuntiyViewController {
     }
 }
 
-extension CommuntiyViewController: UITableViewDelegate {}
+extension CommunityHomeViewController: UITableViewDelegate {}

@@ -48,10 +48,6 @@ private extension PreviewPostTableViewCell {
     }
 }
 
-
-
-
-
 extension PreviewPostTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()

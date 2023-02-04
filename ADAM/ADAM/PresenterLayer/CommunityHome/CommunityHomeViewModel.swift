@@ -1,5 +1,5 @@
 //
-//  CommunityViewModel.swift
+//  CommunityHomeViewModel.swift
 //  ADAM
 //
 //  Created by Noah Park on 2023/01/26.
@@ -7,16 +7,16 @@
 
 import Foundation
 
-protocol CommunityViewModelInput {
+protocol CommunityHomeViewModelInput {
     func loadPreviewPosts()
 }
 
-protocol CommunityViewModelOutput {
+protocol CommunityHomeViewModelOutput {
     var previewPosts: Observable<[PreviewPost]> { get }
     var error: Observable<String> { get }
 }
 
-final class CommunityViewModel: BaseViewModel, CommunityViewModelInput, CommunityViewModelOutput {
+final class CommunityHomeViewModel: BaseViewModel, CommunityHomeViewModelInput, CommunityHomeViewModelOutput {
     private let previewPostsListUseCase: PreviewPostsListUseCase
     var previewPosts: Observable<[PreviewPost]> = Observable([])
     var error: Observable<String> = Observable("")

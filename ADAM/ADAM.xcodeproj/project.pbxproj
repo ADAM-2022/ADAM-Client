@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB0B3507297FFAD2002BA5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3506297FFAD2002BA5BC /* AppDelegate.swift */; };
 		AB0B3509297FFAD2002BA5BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3508297FFAD2002BA5BC /* SceneDelegate.swift */; };
-		AB0B350B297FFAD2002BA5BC /* CommuntiyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B350A297FFAD2002BA5BC /* CommuntiyViewController.swift */; };
+		AB0B350B297FFAD2002BA5BC /* CommunityHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B350A297FFAD2002BA5BC /* CommunityHomeViewController.swift */; };
 		AB0B350E297FFAD2002BA5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0B350C297FFAD2002BA5BC /* Main.storyboard */; };
 		AB0B3510297FFAD3002BA5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0B350F297FFAD3002BA5BC /* Assets.xcassets */; };
 		AB0B3513297FFAD3002BA5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0B3511297FFAD3002BA5BC /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		ABCC730D2982649F00D3B75B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC730C2982649F00D3B75B /* Constant.swift */; };
 		ABCC730F298264E200D3B75B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC730E298264E200D3B75B /* Device.swift */; };
 		ABCC7312298265B000D3B75B /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC7311298265B000D3B75B /* Date+.swift */; };
-		ABCC73182982689900D3B75B /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC73172982689900D3B75B /* CommunityViewModel.swift */; };
+		ABCC73182982689900D3B75B /* CommunityHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC73172982689900D3B75B /* CommunityHomeViewModel.swift */; };
 		ABCC731A298268C200D3B75B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC7319298268C200D3B75B /* BaseViewController.swift */; };
 		ABCC731C298268EF00D3B75B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC731B298268EF00D3B75B /* BaseViewModel.swift */; };
 		ABCC7321298269D500D3B75B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC7320298269D500D3B75B /* UIView+.swift */; };
@@ -72,7 +72,7 @@
 		AB0B3503297FFAD2002BA5BC /* ADAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0B3506297FFAD2002BA5BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB0B3508297FFAD2002BA5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB0B350A297FFAD2002BA5BC /* CommuntiyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuntiyViewController.swift; sourceTree = "<group>"; };
+		AB0B350A297FFAD2002BA5BC /* CommunityHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityHomeViewController.swift; sourceTree = "<group>"; };
 		AB0B350D297FFAD2002BA5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB0B350F297FFAD3002BA5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB0B3512297FFAD3002BA5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		ABCC730C2982649F00D3B75B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		ABCC730E298264E200D3B75B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		ABCC7311298265B000D3B75B /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
-		ABCC73172982689900D3B75B /* CommunityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
+		ABCC73172982689900D3B75B /* CommunityHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityHomeViewModel.swift; sourceTree = "<group>"; };
 		ABCC7319298268C200D3B75B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ABCC731B298268EF00D3B75B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		ABCC7320298269D500D3B75B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 				AB0B350C297FFAD2002BA5BC /* Main.storyboard */,
 				ABCC731F298269C800D3B75B /* UIExtension */,
 				ABCC7315298267F900D3B75B /* Base */,
-				ABCC73162982683000D3B75B /* Community */,
+				ABCC73162982683000D3B75B /* CommunityHome */,
 			);
 			path = PresenterLayer;
 			sourceTree = "<group>";
@@ -300,14 +300,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		ABCC73162982683000D3B75B /* Community */ = {
+		ABCC73162982683000D3B75B /* CommunityHome */ = {
 			isa = PBXGroup;
 			children = (
-				ABCC73172982689900D3B75B /* CommunityViewModel.swift */,
-				AB0B350A297FFAD2002BA5BC /* CommuntiyViewController.swift */,
+				ABCC73172982689900D3B75B /* CommunityHomeViewModel.swift */,
+				AB0B350A297FFAD2002BA5BC /* CommunityHomeViewController.swift */,
 				ABEC207D29855AB100B3AC3F /* ViewComponents */,
 			);
-			path = Community;
+			path = CommunityHome;
 			sourceTree = "<group>";
 		};
 		ABCC731F298269C800D3B75B /* UIExtension */ = {
@@ -483,10 +483,10 @@
 				ABCC731C298268EF00D3B75B /* BaseViewModel.swift in Sources */,
 				ABEC2083298AA7BB00B3AC3F /* APIConfiguration.swift in Sources */,
 				ABCC73272984F54200D3B75B /* PreviewPostsListUseCase.swift in Sources */,
-				AB0B350B297FFAD2002BA5BC /* CommuntiyViewController.swift in Sources */,
+				AB0B350B297FFAD2002BA5BC /* CommunityHomeViewController.swift in Sources */,
 				AB0B3507297FFAD2002BA5BC /* AppDelegate.swift in Sources */,
 				ABCC732A2984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift in Sources */,
-				ABCC73182982689900D3B75B /* CommunityViewModel.swift in Sources */,
+				ABCC73182982689900D3B75B /* CommunityHomeViewModel.swift in Sources */,
 				AB0B3509297FFAD2002BA5BC /* SceneDelegate.swift in Sources */,
 				ABCC731A298268C200D3B75B /* BaseViewController.swift in Sources */,
 				ABCC732C2984FB9200D3B75B /* PreviewPostRepository.swift in Sources */,
