@@ -32,7 +32,6 @@
 		ABCC73272984F54200D3B75B /* PreviewPostsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC73262984F54200D3B75B /* PreviewPostsListUseCase.swift */; };
 		ABCC732A2984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC73292984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift */; };
 		ABCC732C2984FB9200D3B75B /* PreviewPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC732B2984FB9200D3B75B /* PreviewPostRepository.swift */; };
-		ABEC20782985124100B3AC3F /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC20772985124100B3AC3F /* TestUser.swift */; };
 		ABEC207A29852A1A00B3AC3F /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC207929852A1A00B3AC3F /* NetworkServiceError.swift */; };
 		ABEC207F29855B6D00B3AC3F /* PreviewPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC207E29855B6D00B3AC3F /* PreviewPostTableViewCell.swift */; };
 		ABEC2081298A8DF300B3AC3F /* CommunityEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC2080298A8DF300B3AC3F /* CommunityEndpoint.swift */; };
@@ -97,7 +96,6 @@
 		ABCC73262984F54200D3B75B /* PreviewPostsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostsListUseCase.swift; sourceTree = "<group>"; };
 		ABCC73292984FAE700D3B75B /* PreviewPostRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostRepositoryProtocol.swift; sourceTree = "<group>"; };
 		ABCC732B2984FB9200D3B75B /* PreviewPostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostRepository.swift; sourceTree = "<group>"; };
-		ABEC20772985124100B3AC3F /* TestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
 		ABEC207929852A1A00B3AC3F /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		ABEC207E29855B6D00B3AC3F /* PreviewPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPostTableViewCell.swift; sourceTree = "<group>"; };
 		ABEC2080298A8DF300B3AC3F /* CommunityEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityEndpoint.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 		AB0B3505297FFAD2002BA5BC /* ADAM */ = {
 			isa = PBXGroup;
 			children = (
-				ABEC20762985122500B3AC3F /* Test */,
 				ABCC73002982622C00D3B75B /* Application */,
 				ABCC73012982632A00D3B75B /* Global */,
 				ABCC73022982634300D3B75B /* DomainLayer */,
@@ -329,14 +326,6 @@
 			path = Community;
 			sourceTree = "<group>";
 		};
-		ABEC20762985122500B3AC3F /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				ABEC20772985124100B3AC3F /* TestUser.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		ABEC207D29855AB100B3AC3F /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,7 +491,6 @@
 				ABCC731A298268C200D3B75B /* BaseViewController.swift in Sources */,
 				ABCC732C2984FB9200D3B75B /* PreviewPostRepository.swift in Sources */,
 				ABCC73092982640F00D3B75B /* Pallete.swift in Sources */,
-				ABEC20782985124100B3AC3F /* TestUser.swift in Sources */,
 				ABEC207A29852A1A00B3AC3F /* NetworkServiceError.swift in Sources */,
 				ABCC730F298264E200D3B75B /* Device.swift in Sources */,
 				ABCC730D2982649F00D3B75B /* Constant.swift in Sources */,
