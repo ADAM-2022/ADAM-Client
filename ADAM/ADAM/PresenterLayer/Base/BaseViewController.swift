@@ -11,6 +11,8 @@ import Alamofire
 
 class BaseViewController: UIViewController {
     
+    private lazy var backButton = UIButton(frame: .zero)
+    
     //MARK: init
     
     init() {
@@ -49,8 +51,31 @@ class BaseViewController: UIViewController {
         navigationBar.standardAppearance = navigationAppearance
         navigationBar.scrollEdgeAppearance = navigationAppearance
     }
-}
+    
+    func setBackButtonAction() {
+            backButton.addTarget(self, action: #selector(backButtonPressed), for: .touchUpInside)
+        }
+        
+        @objc func backButtonPressed(_ sender: UIButton) {
+            self.navigationController?.popViewController(animated: true)
+        }
 
+}
+private extension BaseViewController {
+    func setBackButtonLayout() {
+        view.addSubview(backButton)
+        backButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(60)
+            make.left.equalToSuperview().offset(10)
+        }
+    }
+    //TODO: 추후 Design Components 도입 시 대체될 수 있음
+    func configureBackButton() {
+        let imageConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
+        backButton.setImage(UIImage(systemName: "chevron.backward", withConfiguration: imageConfig), for: .normal)
+        backButton.tintColor = .black
+    }
+}
 
 extension BaseViewController: UIGestureRecognizerDelegate {
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
